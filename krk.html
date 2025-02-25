@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRK Stores</title>
+    <style>
+        body{
+            box-sizing:border-box;
+            background-color: rgb(25, 109, 206);
+        }        
+        a img{
+            width:30px;
+            height:15px;
+        }
+        nav{
+          background-color:red;
+          margin: 10px;  
+        }
+        nav a{
+            color:black;
+            display:inline;
+            padding:20px;
+            text-decoration: none;
+                  
+        }
+        nav a:hover{
+            background-color: white;
+        }
+    #lap{
+        margin:40px;
+        margin-left:-46px;
+        width:650px;
+        height:350px;
+        }
+        .slider_container {  
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  overflow: hidden;
+}
+.slider {
+  position: relative;
+  width: 400%;
+  height: 100%;
+  display: flexbox;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-around;
+  animation: 30s cubic-bezier(1, 0.95, 0.565, 1) sliding infinite;
+}
+.slide {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+.slide .caption {
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+  background: rgba(0, 0, 0, 0.348);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 0.5rem;
+  border-radius: 0 2rem 2rem 0;
+}
+footer{
+  background-color: rgb(53, 52, 52);
+  color:white;
+  padding:20px;
+}
+.fo-con{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-between;
+}
+.fo-link{
+  width:30%;
+}
+.fo-link h3{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.fo-link ul{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+.fo-link li{
+  margin-bottom: 10px;
+}
+.fo-link a{
+  text-decoration: none;
+  color:white;
+  
+}
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product h3 {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .product p {
+            color: gray;
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        .product .price {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .product button {
+            background-color: chocolate;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="2.png"><img src="2.png"></a>
+        <a href="krk.html">Home</a>
+        <a href="you.html">You</a>
+        <a href="cart.html">Cart</a>
+        <a href="signup.html">Sign up</a>
+        <a href="about.html">About us</a>
+    </nav>
+  <section class="slider_container">
+    <section class="slider">
+      <div class="slide one">
+        <a href="" target="_blank"><img src="apple1.jpeg" ></a>
+        <span class="caption">IPhone 18 Pro<br><p>100000 rs only</p></span>
+      </div>
+    </section>
+        <section class="slider">
+            <div class="slide one">
+                <a href="" target="_blank"><img src="apple1.webp"></a>
+                <span class="caption">IPhone 18+ Pro<br><p>150000 rs only</p></span>
+              </div>
+            </section>
+        <section class="slider">
+            <div class="slide one">
+                <a href="" target="_blank"><img src="hs2.webp" ></a>
+                <span class="caption">SONY Headset<br><p>8000 rs only</p></span>
+            </div>
+        </section>
+   </section>
+<!-- Product Section -->
+    <div class="products-container">
+        <div class="product">
+            <img src="lap.avif" alt="Lenovo Laptop">
+            <h3>Lenovo Laptop</h3>
+            <p>Perfect for work and play.</p>
+            <div class="price">₹65,000</div>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="lap2.avif" alt="HP Laptop">
+            <h3>HP Laptop</h3>
+            <p>Reliable and fast performance.</p>
+            <div class="price">₹75,000</div>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="lap3.avif" alt="Dell Laptop">
+            <h3>Dell Laptop</h3>
+            <p>High-performance machine for professionals.</p>
+            <div class="price">₹80,000</div>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+   <footer>
+    <div class="fo-con">
+      <div class="fo-link"><h3>Information Links</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Blogs</a></li>
+      </ul></div>
+      <div class="fo-link">
+        <h3>Customer Support Links</h3>
+        <ul>
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Service</a></li>
+        </ul>
+      </div>
+      <div class="fo-social">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-Twitter"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fo-copyrights">
+      <p>&copy; 2025 KRK Stores. All Rights Reserved.</p>
+    </div>
+   </footer>
+    
+        </body>
+</html>

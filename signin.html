@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body{
+            padding:0px;
+            margin:0 auto;
+            box-sizing:border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        form{
+            box-shadow: 5px 3px 2px black;
+            margin-right:135px;
+            margin-left:135px;
+            margin-top:135px;
+            border:2px solid salmon;
+            padding:15px;
+            background-color: aqua;
+        }
+        input{
+            border-radius:25px;
+        }
+        button{
+            border-radius: 25px;
+            margin-left:125px;
+            width:135px;
+            color:black;
+            background-color: bisque;
+        }
+        H1{
+            text-align: center;
+            text-shadow: 15px;
+        }
+        button :hover{
+            box-shadow: 2px 3px 5px black;
+        }
+        input[type="text"]:hover{
+            box-shadow: 2px 3px 5px black;
+        }
+    </style>
+</head>
+<body >
+    <H1>HI,WELCOME TO KRK STORES</H1>
+    <form>
+    <label for="name">Name:</label>
+    <input type="text" name="name" required><br>
+    <label for="username">Username:</label>
+    <input type="text" name="username" required><br>
+    <label for="phone">Phone no:</label>
+    <input type="tel" id="phone" required><br>
+    <input type="checkbox" required>Are you a Human<br>
+    <button>Sign In</button><br>
+    Create an account? <a href="signup.html" target="_blank">Sign Up</a>
+</form>
+</body>
+</html>
